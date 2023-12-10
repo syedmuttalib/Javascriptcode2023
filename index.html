@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <title>Getting details data from APi</title>
 </head>
 <body>
-    
+    <!-- Value	State	Description
+0	UNSENT	Client TEMPhas been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	Teh operation is complete. -->
+
+
+
+<div class="main">
+    <div class="section">
+        <h1>Name </h1>
+        <div id="profile">
+        </div>
+        <div class="About">
+           <p>Name: <span id="name"></span></p>
+           <p>Followers: <span id="Followers"></span></p>
+           <p>Location: <span id="Location"></span></p>
+        </div>
+        <button>Fetch</button>
+    </div>
+</div>
+
+
+
+
 </body>
+<script src="Script.js">
+</script>
 </html>
